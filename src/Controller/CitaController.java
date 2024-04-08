@@ -93,8 +93,8 @@ public class CitaController
         {
             int fk_id_patient = Integer.parseInt( JOptionPane.showInputDialog("Input the ID Patient or leave default", cite.getId_patient()));
             int fk_id_medic  = Integer.parseInt( JOptionPane.showInputDialog("Input the ID Medic or leave default", cite.getId_medic()));
-            Date date_cite = Date.valueOf( JOptionPane.showInputDialog("Input the Dace´s cite ID or leave default", cite.getCite_date ()));
-            Time hour_cite = Time.valueOf( JOptionPane.showInputDialog("Input the Hour´s cite ID or leave default", cite.getCite_hour()));
+            Date date_cite = Date.valueOf( JOptionPane.showInputDialog("Input the Date´s cite 'YYYY-MM-DD' or leave default", cite.getCite_date ()));
+            Time hour_cite = Time.valueOf( JOptionPane.showInputDialog("Input the Hour´s cite 'HH:MM:SS' or leave default", cite.getCite_hour()));
             String reason = JOptionPane.showInputDialog("Input the Reason´s cite or leave default", cite.getReason());
 
             cite.setId_patient(fk_id_patient);
