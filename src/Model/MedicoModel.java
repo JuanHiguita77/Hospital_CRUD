@@ -231,7 +231,7 @@ public class MedicoModel implements CRUD
                 ResultSet resultado = preparedStatement.executeQuery();
 
                 //Asignamos los datos encontrados
-                if(resultado.next())
+                while(resultado.next())
                 {
                     medic = new Medico();
 
